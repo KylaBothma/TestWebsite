@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  </head> 
+  <body>
+
+    <div class="container">
+        <div class="navbar">
+            <img src="./images/logr.png" class="logo">
+            <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+           <div class="text-box">
+               <h2>Merwe's Konstruksie</h2>
+               <h3>The best builders in Bloemfontein</h3>
+           </div>
+          </div> 
+       </div>
+      <div class="contain">
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide"><img src="./images/intro1.jpg"></div>
+            <div class="swiper-slide"><img src="./images/intro2.jpg"></div>
+            <div class="swiper-slide"><img src="./images/intro3.jpg"></div>
+            <div class="swiper-slide"><img src="./images/intro4.jpg"></div>
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+      
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>        
+        </div>
+
+      </div>
+      <div class="footer">
+        <p><li>Designed by: K Bothma. Hosted by: CloudPrac.</li></p>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+ 
+  loop: true,
+
+ 
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+    </script>
+  </body> 
+</html>
